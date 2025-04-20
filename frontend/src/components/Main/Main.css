@@ -1,0 +1,153 @@
+.main {
+  flex: 1;
+  min-height: 100vh;
+  padding-bottom: 15vh;
+  padding-left: 5vw; /* default sidebar width */
+  position: relative;
+}
+
+.sidebar.open ~ .main {
+  padding-left: 20vw; /* expanded sidebar width */
+}
+
+.main .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  padding: 20px;
+  color: #585858;
+}
+
+.main .nav .login-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f4f9;
+  color: #585858;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main .nav .login-button:hover {
+  background-color: #e2e6eb;
+}
+.main .nav .icon {
+  padding-left: 2px;
+  width: 18px;
+}
+
+.main .nav img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.main-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.main-container .greet {
+  margin: 5px 0px;
+  font-size: 56px;
+  color: #474545;
+  font-weight: 500;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.main .greet span {
+  background: -webkit-linear-gradient(16deg, #e673ac, skyblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-inputs input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+}
+.form-inputs .multi-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.form-inputs button {
+  padding: 10px 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f4f9;
+  color: #585858;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.form-inputs button:hover {
+  background-color: #e2e6eb;
+}
+
+.section {
+  margin-top: 35px;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  color: #474545;
+}
+.section .card {
+  background-color: #f0f4f9;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.section .card button {
+  padding: 10px 18px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #585858;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.section .card button:hover {
+  background-color: #e2e6eb;
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.loader hr {
+  border-radius: 5px;
+  border: none;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+  background-size: 800px 50px;
+  height: 20px;
+  animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+  0% {
+    background-position: -800px 0px;
+  }
+  100% {
+    background-position: 800px 0px;
+  }
+}
